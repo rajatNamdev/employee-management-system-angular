@@ -1,0 +1,71 @@
+{
+  "employees": [
+    {
+      "name": "Deadpool",
+      "jobTitle": "superhero",
+      "department": "Killing",
+      "email": "Deadpool@example.com",
+      "mobile": "9839283922",
+      "id": "2"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user123",
+      "role": "user"
+    },
+    {
+      "id": "a756",
+      "username": "Rajat",
+      "password": "Rajat@123",
+      "role": "user"
+    },
+    {
+      "id": "rkwvlj0hqpr",
+      "username": "Rajat1234",
+      "password": "Rajat@123",
+      "role": "user"
+    },
+    {
+      "id": "qqv4tob6ke9",
+      "username": "User5",
+      "password": "user123",
+      "role": "user"
+    },
+    {
+      "id": "838u5vj7ch2",
+      "username": "admin2",
+      "password": "admin2",
+      "role": "user"
+    },
+    {
+      "id": "elgy1i2iaaj",
+      "username": "admin3",
+      "password": "admin2",
+      "role": "user"
+    },
+    {
+      "id": "4k6105kbpfr",
+      "username": "admin4",
+      "password": "admin4",
+      "role": "admin"
+    },
+    {
+      "id": "nqpn1y7z8n",
+      "username": "Rajat12356",
+      "email": "rajat@gmail",
+      "phone": "0989898",
+      "address": "dfaf",
+      "password": "rajat12345",
+      "role": "user"
+    }
+  ]
+}

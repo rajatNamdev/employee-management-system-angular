@@ -1,0 +1,12 @@
+$color-primary: #673ab7;
+$color-text: #ffffff;
+
+
+// Define a custom class for the header
+th{
+  background-color: $color-primary !important;
+  color: $color-text !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

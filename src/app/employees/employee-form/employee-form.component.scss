@@ -1,0 +1,37 @@
+/* Center the mat-card horizontally and vertically */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 50px auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+.back-button {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  width: 40px; /* Reduced button width */
+  height: 40px; /* Reduced button height */
+  padding: 0; /* Remove padding to maintain size */
+  min-width: 0; /* Remove min-width constraint */
+  background-color: transparent; /* Remove background color */
+}

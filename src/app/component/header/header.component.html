@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <span class="navbar-brand">Employee Management System</span>
+  <span class="spacer"></span>
+  @if (username) {
+  <button mat-icon-button [matMenuTriggerFor]="userMenu" class="user-icon">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #userMenu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>person</mat-icon>
+      <span>{{username}}</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      <span (click)="logout()">Logout</span>
+    </button>
+  </mat-menu>
+  } @else {
+  <div></div>
+  }
+</mat-toolbar>

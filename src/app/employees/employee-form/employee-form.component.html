@@ -1,0 +1,62 @@
+<button mat-icon-button routerLink="/employees" class="back-button">
+  <mat-icon>arrow_back</mat-icon>
+</button>
+<mat-card>
+  @if (isEdit) {
+    <h4>Edit Employee</h4>
+  } @else {
+    <h4>Add Employee</h4>
+  }
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" />
+      <mat-error *ngIf="employeeForm.get('name')?.hasError('required')">
+        Name is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Job Title</mat-label>
+      <input matInput formControlName="jobTitle" />
+      <mat-error *ngIf="employeeForm.get('jobTitle')?.hasError('required')">
+        Job title is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Department</mat-label>
+      <input matInput formControlName="department" />
+      <mat-error *ngIf="employeeForm.get('department')?.hasError('required')">
+        Department is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" />
+      <mat-error *ngIf="employeeForm.get('email')?.hasError('required')">
+        Email is required
+      </mat-error>
+      <mat-error *ngIf="employeeForm.get('email')?.hasError('email')">
+        Enter a valid email
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Mobile</mat-label>
+      <input matInput formControlName="mobile" />
+      <mat-error *ngIf="employeeForm.get('mobile')?.hasError('required')">
+        Mobile number is required
+      </mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="!employeeForm.valid"
+    >
+      Submit
+    </button>
+  </form>
+</mat-card>
